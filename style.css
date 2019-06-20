@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+/* ALL HEADER STYLES */
+header{
+    margin:0;
+	padding: 0;
+	height:640px;
+	background-repeat:no-repeat;
+    background-size:cover;
+}
+.nav-link,.navbar-brand {
+    color:rgb(230, 47, 77) !important;
+   font-family: 'Courgette', cursive;
+    font-size: 120%;
+}
+#navbarSupportedContent{
+    padding-right:50px;
+}
+.dropdown-menu,.dropdown-item{
+    background: pink;
+    font-family: 'Courgette', cursive;
+    color:rgb(230, 47, 77) !important;
+}
+
+h1{
+    text-align: center;
+    line-height: 75vh;
+    color:rgb(230, 47, 77) !important;
+    text-shadow: 2px 2px 2px wheat;
+    font-family: 'Courgette', cursive;
+    font-size:8rem;
+}
+
+#icons-div{
+   position:absolute;
+   bottom:10px;
+   left: 5px;
+}
+/* Style all font awesome icons */
+a.fa-linkedin,a.fa-facebook,a.fa-youtube,a.fa-instagram{
+   text-decoration-line: none;
+}
+
+.fa {
+  padding: 18px 0;
+  font-size: 40px;
+  width:80px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    position: relative;
+    background: #3B5998;
+    color: white;
+    animation-name : shift;
+    animation-duration: 2s;
+    animation-delay: 7s;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+    position: relative;
+    background:#007bb5;
+    color: white;
+    animation-name : shift;
+    animation-duration: 4s;
+    animation-delay: 6s;
+}
+
+.fa-youtube{
+    position: relative;
+    background: red;
+    color:white;
+    animation-name : shift;
+    animation-duration: 6s;
+    animation-delay: 5s;
+} 
+
+.fa-instagram{
+    position: relative;
+    background-image: linear-gradient(45deg, #FFDC80,#FCAF45,#F77737,#F56040,#E1306C,#C13584,#833AB4,#5851DB,#405DE6);
+    animation-name : shift;
+    animation-duration: 8s;
+    animation-delay: 4s;
+}
+
+/* CSS ANIMATION OF SOCIAL MEDIA ICONS */
+@keyframes shift{
+    0%   {left:0px; bottom:0px;transform: rotateY(20deg)}
+    25%{transform: rotateY(90deg)}
+    50%  {left:1000px; top:0px;transform: rotateY(180deg);transform: rotateX(180deg) }
+    75%{transform: rotateY(270deg)}
+    100%   {left:0px; top:0px;transform: rotateY(360deg);transform: rotateX(360deg)}
+}
+
+ @media(max-width:768px){
+    header{
+        height: 453px;;
+    }
+    h1{
+        font-size: 2.3rem;
+        line-height:10vh;
+    }
+    .fa {
+         padding: 20px 0;
+        font-size: 20px;
+        width:60px;
+        text-align: center;
+        text-decoration: none;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
